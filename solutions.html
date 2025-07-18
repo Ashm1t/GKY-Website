@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solutions | GKY E‑Systems</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Main Navigation">
+      <div class="nav__logo">GKY E‑Systems</div>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html" class="nav__active">Solutions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="why-choose-us.html">Why Choose Us</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="solutions" class="solutions fade-in" aria-label="Solutions">
+      <h2 class="solutions__title slide-up">Our Solutions</h2>
+      <div class="solutions__grid">
+        <div class="solution-card solution-card--kaspersky slide-up" tabindex="0">
+          <span class="solution-card__icon"> <!-- Shield SVG -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6L40 12V22C40 33 24 42 24 42C24 42 8 33 8 22V12L24 6Z" stroke="#00e6e6" stroke-width="2.5" fill="#1e2a38"/>
+              <path d="M24 18V26" stroke="#00e6e6" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="30" r="2" fill="#00e6e6"/>
+            </svg>
+          </span>
+          <h3 class="solution-card__title">Kaspersky Solutions</h3>
+          <p class="solution-card__desc">Enterprise-grade cybersecurity from a global leader. Protect your business with advanced Kaspersky antivirus and security solutions.</p>
+          <div class="solution-card__more">Kaspersky offers endpoint protection, threat intelligence, and cloud security for businesses of all sizes. <a href="#">Learn more</a></div>
+        </div>
+        <div class="solution-card solution-card--microsoft slide-up" tabindex="0">
+          <span class="solution-card__icon"> <!-- Microsoft SVG -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="16" height="16" fill="#2196f3"/>
+              <rect x="26" y="6" width="16" height="16" fill="#00e6e6"/>
+              <rect x="6" y="26" width="16" height="16" fill="#1de9b6"/>
+              <rect x="26" y="26" width="16" height="16" fill="#fff" fill-opacity="0.12"/>
+            </svg>
+          </span>
+          <h3 class="solution-card__title">Microsoft Gold Partner</h3>
+          <p class="solution-card__desc">Official Microsoft Gold Partner. Full suite of Microsoft software, licensing, and Surface devices. Empower your business with Office, Windows, Azure, and Surface hardware.</p>
+          <div class="solution-card__more">We provide Microsoft 365, Azure cloud, and Surface hardware with expert deployment and support. <a href="#">Learn more</a></div>
+        </div>
+        <div class="solution-card solution-card--hardware slide-up" tabindex="0">
+          <span class="solution-card__icon"> <!-- Laptop/Server SVG -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="14" width="28" height="16" rx="2.5" stroke="#1de9b6" stroke-width="2.5" fill="#232526"/>
+              <rect x="6" y="34" width="36" height="4" rx="2" fill="#1de9b6"/>
+              <rect x="16" y="20" width="16" height="6" rx="1.5" fill="#fff" fill-opacity="0.08"/>
+            </svg>
+          </span>
+          <h3 class="solution-card__title">Laptops, Workstations & Infrastructure</h3>
+          <p class="solution-card__desc">Complete range from HP, Lenovo, ASUS, Acer, Apple, and Dell. Modern laptops, workstations, and IT infrastructure for every business need.</p>
+          <div class="solution-card__more">From procurement to deployment, we deliver scalable IT infrastructure tailored to your business. <a href="#">Learn more</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- Will be replaced with modular footer.html content in next steps -->
+    <!--#include file="sections/footer.html" -->
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    // Interactive expand/collapse for solution cards
+    document.querySelectorAll('.solution-card').forEach(card => {
+      card.addEventListener('click', function() {
+        this.classList.toggle('expanded');
+      });
+      card.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          this.classList.toggle('expanded');
+        }
+      });
+    });
+    
+    // Reveal on scroll for fade-in and slide-up
+    function revealOnScroll() {
+      document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+  </script>
+</body>
+</html> 

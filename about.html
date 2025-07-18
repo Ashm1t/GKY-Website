@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | GKY E‑Systems</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Main Navigation">
+      <div class="nav__logo">GKY E‑Systems</div>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="about.html" class="nav__active">About</a></li>
+        <li><a href="why-choose-us.html">Why Choose Us</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about" class="about fade-in" aria-label="About GKY E‑Systems">
+      <h2 class="about__title">About GKY E‑Systems</h2>
+      <div class="about__content">
+        <p class="about__desc">GKY E‑Systems is a leading IT solutions provider & distributor based in Bengaluru, Karnataka.</p>
+        <ul class="about__facts timeline">
+          <li class="timeline__item">Founded Aug 28, 2021; registered as Private Limited in Karnataka.</li>
+          <li class="timeline__item">Authorized/Paid-up capital ₹1,000,000; 18+ years of experience in delivering infrastructure solutions.</li>
+        </ul>
+        <div class="about__contact-card slide-up">
+          <div class="about__address">
+            <strong>Address:</strong><br>
+            #3/4, 8th Cross, Lakshmi Road, Yellamma Gardens,<br>
+            Shanthinagar, Bengaluru – 560027
+          </div>
+          <div class="about__contact">
+            <strong>Contact:</strong><br>
+            +91 80 49937440, +91 8050166570<br>
+            <a href="mailto:info@gky.co.in">info@gky.co.in</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- Will be replaced with modular footer.html content in next steps -->
+    <!--#include file="sections/footer.html" -->
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    // Reveal on scroll for fade-in and slide-up
+    function revealOnScroll() {
+      document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+  </script>
+</body>
+</html> 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | GKY E‑Systems</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Main Navigation">
+      <div class="nav__logo">GKY E‑Systems</div>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="why-choose-us.html">Why Choose Us</a></li>
+        <li><a href="careers.html" class="nav__active">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="careers" class="careers fade-in" aria-label="Careers">
+      <h2 class="careers__title slide-up">Careers</h2>
+      <p class="careers__desc slide-up">We're always looking for talented individuals to join our growing team. If you're passionate about IT solutions and want to make an impact, we'd love to hear from you!</p>
+      <a href="mailto:info@gky.co.in" class="careers__cta slide-up">Join Our Team</a>
+    </section>
+  </main>
+  <footer>
+    <!-- Will be replaced with modular footer.html content in next steps -->
+    <!--#include file="sections/footer.html" -->
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    // Reveal on scroll for fade-in and slide-up
+    function revealOnScroll() {
+      document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+  </script>
+</body>
+</html> 

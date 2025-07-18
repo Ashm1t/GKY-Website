@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Choose Us | GKY E‑Systems</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Main Navigation">
+      <div class="nav__logo">GKY E‑Systems</div>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="why-choose-us.html" class="nav__active">Why Choose Us</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="why-choose-us" class="why-choose-us fade-in" aria-label="Why Choose Us">
+      <h2 class="why-choose-us__title">Why Choose Us</h2>
+      <p class="why-choose-us__intro">We deliver trusted IT solutions with a local touch and global partnerships.</p>
+      <ul class="why-choose-us__list">
+        <li class="why-choose-us__item">
+          <span class="why-choose-us__icon why-choose-us__icon--partners"></span>
+          Official partnerships (Kaspersky, Microsoft)
+        </li>
+        <li class="why-choose-us__item">
+          <span class="why-choose-us__icon why-choose-us__icon--local"></span>
+          Local Karnataka presence with fast support
+        </li>
+        <li class="why-choose-us__item">
+          <span class="why-choose-us__icon why-choose-us__icon--expertise"></span>
+          Cybersecurity & modern infra expertise
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <!-- Will be replaced with modular footer.html content in next steps -->
+    <!--#include file="sections/footer.html" -->
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    // Reveal on scroll for fade-in and slide-up
+    function revealOnScroll() {
+      document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+  </script>
+</body>
+</html> 

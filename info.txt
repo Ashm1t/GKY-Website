@@ -1,0 +1,64 @@
+# Prompt: Build GKY E‑Systems Website – Valve‑Style Design
+
+## 1. Task Description
+You are an AI web dev assistant in Cursor IDE. Create a sleek, dark-themed, Valve-inspired **single-page website** for **GKY E‑Systems**. It should include:
+
+- Hero section with carousel  
+- Solutions grid: Security, Hardware, Microsoft Software & Azure  
+- About Us (company background & profile)  
+- Why Choose Us  
+- Case Studies placeholder  
+- Careers (“Join Our Team”)  
+- Contact section
+
+## 2. Technology Stack & Style
+- Output: `index.html`, `styles.css`, `script.js`
+- Mobile-first, responsive layout
+- Vanilla HTML, CSS, JS (no frameworks)
+- Dark/charcoal background, white typography, teal/electric-blue accents
+- Smooth CSS animations, hover effects, carousel slideshow
+- Semantic markup with ARIA accessibility
+- BEM or clean class naming
+
+## 3. Content to Include
+
+### Branding & Hero
+- Headline: **“Secure. Empower. Enable.”**
+- CTA: **“Explore Solutions”**
+- Carousel slides: 
+  - Kaspersky Antivirus  
+  - Surface/brand laptops  
+  - Microsoft Office/Azure
+
+### Solutions Section (grid cards)
+- **Kaspersky Antivirus** – “Enterprise-grade cybersecurity.”
+- **Surface & Partner Hardware** – Surface laptops, plus Dell, HP, Lenovo, Apple.
+- **Microsoft Software & Azure** – Office, Windows, cloud solutions.
+
+### About GKY E‑Systems
+- “GKY E‑Systems is a leading IT solutions provider & distributor based in Bengaluru, Karnataka.” :contentReference[oaicite:1]{index=1}  
+- “Founded Aug 28, 2021; registered as Private Limited in Karnataka.” :contentReference[oaicite:2]{index=2}  
+- “Authorized/Paid-up capital ₹1,000,000; 18+ years of experience in delivering infrastructure solutions.” :contentReference[oaicite:3]{index=3}  
+- Address: “#3/4, 8th Cross, Lakshmi Road, Yellamma Gardens, Shanthinagar, Bengaluru – 560027” :contentReference[oaicite:4]{index=4}  
+- Contact: “+91 80 49937440, +91 8050166570 | info@gky.co.in” :contentReference[oaicite:5]{index=5}
+
+### Why Choose Us
+- Official partnerships (Kaspersky, Microsoft)
+- Local Karnataka presence with fast support
+- Cybersecurity & modern infra expertise
+
+### Case Studies & Careers
+- Placeholder thumbnails for “Case Study 1” etc.
+- “Join Our Team” call-to-action
+
+### Contact
+- Embed address, phone, email
+
+## 4. Design & Layout Features
+- Hero carousel with JS interval and fade transitions
+- Grid layout for solutions and team/case sections
+- Product cards hover: scale + shadow
+- Smooth scroll navigation
+- Parallax or subtle scroll animations
+- Footer with links & newsletter sign-up
+
