@@ -22,30 +22,30 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/index.html"
+      "source": "/",
+      "destination": "/index.html"
     },
     {
-      "src": "/solutions",
-      "dest": "/solutions.html"
+      "source": "/solutions",
+      "destination": "/solutions.html"
     },
     {
-      "src": "/about",
-      "dest": "/about.html"
+      "source": "/about",
+      "destination": "/about.html"
     },
     {
-      "src": "/why-choose-us",
-      "dest": "/why-choose-us.html"
+      "source": "/why-choose-us",
+      "destination": "/why-choose-us.html"
     },
     {
-      "src": "/careers",
-      "dest": "/careers.html"
+      "source": "/careers",
+      "destination": "/careers.html"
     },
     {
-      "src": "/contact",
-      "dest": "/contact.html"
+      "source": "/contact",
+      "destination": "/contact.html"
     }
   ],
   "headers": [
