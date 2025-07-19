@@ -20,6 +20,10 @@
     {
       "src": "assets/*",
       "use": "@vercel/static"
+    },
+    {
+      "src": "*.mp4",
+      "use": "@vercel/static"
     }
   ],
   "rewrites": [
